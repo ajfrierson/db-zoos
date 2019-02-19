@@ -1,5 +1,9 @@
 const express = require('express');
 const helmet = require('helmet');
+const knex = rquire('knex');
+
+const knexConfig = require('./knexfile.js');
+const db = knex(knexConfig.development)
 
 const server = express();
 
@@ -7,6 +11,7 @@ server.use(express.json());
 server.use(helmet());
 
 // endpoints here
+
 
 const port = 3300;
 server.listen(port, function() {
