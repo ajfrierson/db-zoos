@@ -1,12 +1,11 @@
-module.exports ={
+module.exports = {
 
-    development: {
-        client: 'sqlite3',
-        connection: {
-            filename: './data/lambda.sqlite3',
-        },
-        useNullAsDefault: true, //needed for sqlite3
+  development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './data/lambda.sqlite3'
     },
+    useNullAsDefault: true,
+  },
 };
-
 
